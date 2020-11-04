@@ -1,3 +1,5 @@
 url: http://oldplayer.cz
 name: Old Player
 description: Zážitky starého hráče
+
+theme: jekyll-theme-midnight
