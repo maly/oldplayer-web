@@ -1,0 +1,976 @@
+/**
+ * Theme Name:Oblivious
+ * Theme URI: www.web2feel.com
+ * Description: A stylish gamer wordpress theme from jinsona designs. 
+ * Author: Jinsona Designs
+ * Author URI: http://web2feel.com
+ *
+ * Copyright (c) 2008 - 2010 web2feel.com.  All rights reserved.
+ * http://web2feel.com
+ *
+ */
+
+@import url('http://cdn.oldplayer.cz/wp-content/themes/Oblivious2/Oblivious/../Oblivious/sidebar.css');
+@import url('http://cdn.oldplayer.cz/wp-content/themes/Oblivious2/Oblivious/../Oblivious/comment.css');
+
+@import url(http://fonts.googleapis.com/css?family=Francois+One&subset=latin,latin-ext);
+
+html,body,div,span,object,h1,h2,h3,h4,h5,h6,p
+,pre,a,abbr,acronym,address,big,cite
+,code,del,dfn,em,img,ins,kbd,q,samp,small
+,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,
+form,label,legend,table,caption,tbody,tfoot,
+thead,tr,th,td{
+margin:0;
+padding:0;
+vertical-align:baseline;
+outline:none;
+
+}
+
+abbr, acronym {border-bottom:1px dotted #C1AD97;}
+
+b,i,hr,u,center,menu,layer,s,strike,font,xmp
+{
+margin:0;
+padding:0;
+vertical-align:baseline;
+outline:none;
+font-size:100%;
+font-weight:normal;
+font-style:normal;
+background:transparent;
+border:none;
+text-decoration:none
+}
+
+font{
+color:#333
+}
+
+center{
+text-align:left
+}
+
+body {
+	margin:0 auto;
+	padding:0px 0px 0px 0px;
+	background:#190E02 url('http://cdn.oldplayer.cz/wp-content/themes/Oblivious2/Oblivious/images/body.png') repeat-x;
+	font-family:Tahoma,Century gothic, Tahoma,sans-serif;
+	color:#161514;
+	font-size:14px;
+	}
+
+.home{
+	background:#190E02 url('http://cdn.oldplayer.cz/wp-content/themes/Oblivious2/Oblivious/images/body.png') repeat-x;
+}
+	
+a {
+	color: #DE0505;
+	text-decoration: none;
+	}
+a:visited {
+	color: #DE0505;
+	}
+a:hover, a:active {
+	color: #d54e21;
+	text-decoration: none;
+	}
+
+h1,h2, h3, h4, h5, h6 {
+	line-height:125%;
+	font-weight: bold;
+	}
+.postleft h2,.title h2,.shout,.bothead {
+	font-family: 'Francois One', sans-serif;
+	}
+h1 {
+	font-size: 26px;
+	}	
+	
+h2 {
+	font-size: 21px;
+	}
+h3 {
+	font-size: 19px;
+	}
+h4 {
+	font-size: 17px;
+	}
+h5 {
+	font-size: 15px;
+	}
+h6 {
+	font-size: 13px;
+	}
+
+
+ul {
+	list-style: square;
+	}
+
+
+blockquote {
+	font-style: italic;
+	color:#917d67;
+	background:#3F2408;
+	padding:10px;
+	}
+blockquote blockquote {
+	color: #777;
+	}
+blockquote em {
+	font-style: normal;
+	}
+
+
+pre {
+	padding: 9px;
+	background: #f9f9f9;
+	border: 1px solid #ccc;
+	}
+code {
+	padding: 0 3px;
+	background: #eee;
+	}
+pre code {
+	background: transparent;
+	}
+
+
+
+
+.clear {
+	clear:both;
+	}
+img.centered  {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	padding: 0px;
+	}
+	
+img.alignnone {
+	padding: 5px 5px;
+	margin: 0px 0px 10px 0px;
+	display: inline;
+	background:#E4E4E4;
+	border: 1px solid #fff;
+	}
+
+img.alignright {
+	padding: 5px 5px;
+	margin: 0px 0px 0px 10px;
+	display: inline;
+	background:#E4E4E4;
+
+	}
+
+img.alignleft {
+	padding: 5px 5px;
+	margin: 0px 10px 0px 0px;
+	display: inline;
+	background:#E4E4E4;
+
+	}
+	
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	}
+
+.alignright {
+	float: right;
+	margin: 0px 0px 10px 10px;
+	}
+
+.alignleft {
+	float: left;
+	margin: 0px 10px 10px 0px;
+	}
+	
+.wp-caption {
+	border: 1px solid #fff;
+	text-align: center;
+	background-color: #E4E4E4;
+	padding: 4px 0px 5px 0px;
+	color:#555;
+	}
+
+.wp-caption img {
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+	border: 0px;
+	
+	}
+
+.wp-caption p.wp-caption-text {
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 12px;
+	}
+	
+#masthead{
+
+
+
+}
+
+#header{
+
+	height:213px;
+	width:1000px;
+	overflow:hidden;
+	margin:0px auto;
+	background:url('http://cdn.oldplayer.cz/wp-content/themes/Oblivious2/Oblivious/images/header.png') no-repeat;
+
+}
+
+.blognames{
+	float:left;
+	width:500px;
+	font-family:Georgia,Tahoma,Century gothic, Tahoma,sans-serif;
+}
+
+h1#blog-title{
+
+	font-size:36px;
+	padding:60px 0px 0px 40px;
+	margin:0px 0px 0px 10px;
+	font-weight:bold;
+}
+
+h1#blog-title a:link,h1#blog-title a:visited {
+
+	color:#fff;
+	text-shadow:1px 1px 1px #000;
+	
+}
+h2#blog-desc{
+	font: 16px Arial,Tahoma,Century gothic,verdana,  sans-serif;
+	padding:5px 0px 0px 40px;
+	width:400px;
+	color:#f87f0c;
+	margin:0px 0px 0px 10px;
+	text-shadow:1px 1px 1px #0B0302;
+	}
+
+
+
+/*Page menu*/
+
+#foxmenucontainer{
+	height:47px;
+	display:block;
+	padding:0px 0 0px 0px;
+	font: 10px Tahoma, Verdana,Century gothic,sans-serif;
+	font-weight:normal;
+	text-transform:uppercase;
+	width:1000px;
+	margin:0px auto;
+	}
+#menu{
+	margin: 0px;
+	padding: 0px;
+	width:1000px;
+	height:47px;
+	overflow:hidden;
+	}
+	
+#menu ul {
+	float: left;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	}
+	
+#menu li {
+	float: left;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	}
+	
+#menu li a, #menu li a:link, #menu li a:visited {
+	display: block;
+	margin: 0px;
+	line-height:47px;
+	padding:0px 10px;
+	color:#AF5A00;
+
+	}
+
+#menu li a:hover, #menu li a:active {
+	background:url('http://cdn.oldplayer.cz/wp-content/themes/Oblivious2/Oblivious/images/menua.png') repeat-x ;
+	color: #fff;
+    margin: 0px;
+	text-decoration: none;
+	}
+	
+#menu li li a, #menu li li a:link, #menu li li a:visited {
+
+		background: #000;
+	width: 150px;
+	color:#9F5709;
+	font-weight: normal;
+	float: none;
+	margin: 0px;
+	border-bottom: 1px solid #190E02;
+	border-right: 1px solid #190E02;
+	line-height:30px;
+	}
+	
+#menu li li a:hover, #menu li li a:active {
+	background: #311C05;
+	color: #fff;
+
+	}
+
+#menu li ul {
+	z-index: 9999;
+	position: absolute;
+	left: -999em;
+	height: auto;
+	width: 170px;
+	margin: 0px;
+	padding: 0px;
+	}
+
+#menu li li { 
+	}
+
+#menu li ul a { 
+	width: 140px;
+	}
+
+#menu li ul a:hover, #menu li ul a:active { 
+	}
+
+#menu li ul ul {
+	margin: -31px 0 0 170px;
+	}
+
+#menu li:hover ul ul, #menu li:hover ul ul ul, 
+#menu li.sfhover ul ul, #menu li.sfhover ul ul ul {
+	left: -999em;
+	}
+
+#menu li:hover ul, #menu li li:hover ul, 
+#menu li li li:hover ul, #menu li.sfhover ul, 
+#menu li li.sfhover ul, #menu li li li.sfhover ul {
+	left: auto;
+	}
+
+#menu li:hover, #menu li.sfhover { 
+	position: static;
+	}
+
+	
+	
+#catmenucontainer
+{
+	display: block;
+	font: 10px Tahoma,verdana,Century gothic, Arial, sans-serif;
+	font-weight: normal;
+	height: 33px;
+	padding: 0px 0 0px 0px;
+	text-transform: uppercase;
+	width:1000px;
+	margin:0px auto;
+	background:url('http://cdn.oldplayer.cz/wp-content/themes/Oblivious2/Oblivious/images/catmenu.png');
+	
+}
+#catmenu
+{
+	width:980px;
+	margin: 0px;
+	padding: 0px 10px;
+	float:left;
+}
+#catmenu ul
+{
+	float: left;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+#catmenu li
+{
+	float: left;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+#catmenu li a, #catmenu li a:link, #catmenu li a:visited
+{
+	color: #EFB3B3;
+	display: block;
+	font-weight: normal;
+	padding: 0px 10px ;
+	line-height:33px;
+	text-shadow:1px 1px 1px #222;
+
+
+}
+#catmenu li a:hover, #catmenu li a:active
+{
+	background:#5F0606;
+	color: #fff;
+	display: block;
+	line-height:33px;
+
+}
+#catmenu li li a, #catmenu li li a:link, #catmenu li li a:visited
+{
+	background:#560404;
+	border-bottom: 1px solid #5F0606;
+	color: #EFB3B3;
+	float: none;
+	margin: 0px;
+	line-height:33px;
+	width: 150px;
+}
+#catmenu li li a:hover, #catmenu li li a:active
+{
+	background: #3F0404;
+	color: #fff;
+	float: none;
+	line-height:33px;
+	margin: 0px;
+	width: 150px;
+
+}
+#catmenu li ul
+{
+	height: auto;
+	left: -999em;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	width: 170px;
+	z-index: 9999;
+}
+#catmenu li li
+{
+}
+#catmenu li ul a
+{
+	width: 140px;
+}
+#catmenu li ul a:hover, #catmenu li ul a:active
+{
+}
+#catmenu li ul ul
+{
+	margin: -34px 0 0 170px;
+}
+#catmenu li:hover ul ul, #catmenu li:hover ul ul ul, 
+#catmenu li.sfhover1 ul ul, #catmenu li.sfhover1 ul ul ul
+{
+	left: -999em;
+}
+#catmenu li:hover ul, #catmenu li li:hover ul, 
+#catmenu li li li:hover ul, #catmenu li.sfhover ul, 
+#catmenu li li.sfhover1 ul, #catmenu li li li.sfhover1 ul
+{
+	left: auto;
+}
+#catmenu li:hover, #catmenu li.sfhover1
+{
+	position: static;
+}
+
+	
+
+	
+#search form {
+	margin: 0px 0px 0px 0px;
+	padding: 0;
+}
+
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#search p {
+	margin: 0;
+	font-size: 85%;
+}
+
+#s {
+	width:205px;
+	margin:10px 5px 0px 10px;
+	padding: 3px 3px;
+	height:16px;
+	border:none;
+	font: normal 100% "Tahoma", Arial, Helvetica, sans-serif;
+	color:#fff;
+	float:left;
+	border:none;
+	background:#311C05;
+	border:1px solid #3F2408;
+	display:inline;
+}
+input#searchsubmit{
+	float:right;
+	padding: 3px 5px;
+	display:inline;
+	margin:10px 10px 0px 0px;
+	background:#A60303;
+	color:#fff;
+	border:none;
+}
+
+
+#wrapper{
+	width:1000px;
+	margin:0px auto;
+}
+
+#casing{
+	margin:0px 0px;
+	padding-bottom:10px;
+	background:#311c05 url('http://cdn.oldplayer.cz/wp-content/themes/Oblivious2/Oblivious/images/casing.png') no-repeat;
+}	
+
+#content{
+	width:650px;
+	padding:20px 0px 10px 0px;
+	float:left;
+	display:inline;
+}
+
+.post {
+	margin: 0px 0px 20px 20px;
+	padding:5px 5px;
+	height: 100%;
+	color:#c1ad97;
+	overflow:hidden;
+	background:#190E02;
+	border:1px solid #3F2408;
+	}
+
+.title{
+	margin: 0 0 0;
+	padding: 0px 0px 0px 0px;
+	
+}
+
+.title h2 {
+	margin: 0 10px;
+	padding: 10px 0px 5px 0px;
+	font-weight:bold;
+	font-size:24px;
+	/*font-family: Georgia,Myriad Pro,Verdana,Tahoma,sans-serif;	*/
+
+	}
+
+.title h2 a, .title h2 a:link, .title h2 a:visited  {
+	color: #9b774e;
+
+	}
+.title h2 a:hover  {
+	color: #9b774e;
+
+	}	
+	
+.title-meta{
+
+	margin:5px 10px 10px 10px ;
+	padding:3px 0px;
+	font-size:10px;
+	text-transform:uppercase;
+	color:#bb690f;
+	background:#221302;
+	border:1px solid #3c240a;
+	}
+.author{
+
+	padding:2px 5px;
+
+
+}
+.clock{
+
+	padding:2px 5px;
+	margin-left:10px;
+
+}	
+
+.com{
+	line-height:16px;
+	margin-left:10px;
+	padding:2px 5px;
+
+}
+
+.com a:link,
+.com a:visited {
+	color: #bb690f;
+
+}
+
+.postim{
+	float:left;
+	margin:5px 10px 5px 0px ;
+	background:#5e3d18;
+	padding:5px;
+
+}
+
+
+.postinfo {
+	padding: 4px 5px 10px 10px;
+	font-size:14px;
+	overflow:auto;
+			}
+		
+.postinfo a {
+	
+	color:#5A7516;
+	font-weight:normal;
+	text-decoration:none;
+	}
+.postcat{
+	float:left;
+	padding:0px 0 0 20px;
+	color:#66851b;
+	background:url('http://cdn.oldplayer.cz/wp-content/themes/Oblivious2/Oblivious/images/tag.png');
+	background-repeat:no-repeat;
+
+	}	
+.postcat a {
+	
+	color:#5A7516;
+	font-weight:normal;
+	text-decoration:none;
+	}
+
+
+.postcover a:link,
+.postcover a:visited {
+	color: #d07006;
+	background-color: transparent;
+}
+
+.postcover a:hover {
+	color: #fff;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.postcover {
+	margin: 0 0;
+	padding: 0px 10px;
+	line-height:22px;
+	color:#c1ad97;
+	}
+
+.postcover p {
+		margin: 5px 0px 10px 0px;
+	}
+.postcover img{
+		max-width:625px;
+		height:auto;
+	}
+.postcover ul{
+  margin: .4em 0 1em;
+  line-height: 150%;
+  list-style:square;
+}
+.postcover ol{
+  margin: .4em 0 1em;
+  line-height: 150%;
+}
+
+.postcover ul li, .postcover ol li{
+  list-style-position:outside;
+  margin-left: 1.6em;
+}
+
+a.readmore{
+	width:88px;
+	height:28px;
+	display:block;
+	margin:10px 0px 0px 10px;
+	background:url('http://cdn.oldplayer.cz/wp-content/themes/Oblivious2/Oblivious/images/readon.png') no-repeat;
+	
+}
+
+#navigation{
+	width:600px;
+	padding-left:10px;
+
+}
+h2.pagetitle{
+	font-size:14px;
+	padding:10px 0px;
+	font-weight:normal;
+	margin-right:10px;
+	color:#6F6753;
+	text-align:center;
+
+}	
+	
+#footer{
+	width:100%;
+	padding:10px 0px 10px 0px;
+	background:#311C05;
+	position:relative;
+	font-size:13px;
+	border-top:1px solid #7F4D17;
+	color:#BF915F;
+	height:70px;
+}
+#footer a:link, #footer a:visited{
+	color:#BF915F;
+}
+.fleft{
+	float:left;
+	text-align:left;
+	margin-left:10px;
+	margin-top:10px;
+	line-height:16px;
+}
+.fright{
+	float:right;
+	text-align:right;
+	margin-right:10px;
+	margin-top:10px;
+	line-height:16px;
+	display: none;
+}
+
+.postad{
+	margin:10px;
+	float:left;
+}
+
+.topad{
+	float:right;
+	margin:55px 10px 0px 0px;
+	width:468px;
+	height:60px;
+
+}
+
+#featured{
+	height: 350px; 
+	overflow: hidden;
+	position: relative; 
+	width:1000px;
+	padding-top:10px;
+	background:url('http://cdn.oldplayer.cz/wp-content/themes/Oblivious2/Oblivious/images/slider.png') bottom no-repeat;
+}
+
+#slidearea{
+	margin:0px auto;
+}
+
+#slidearea ul{
+	margin-top:10px;
+	list-style:none;
+}
+
+.coin-slider { overflow: hidden; zoom: 1; position: relative; }
+.coin-slider a{ text-decoration: none; outline: none; border: none; }
+
+.cs-buttons { font-size: 0px; padding: 35px 0px 0px 0px; float: left; }
+.cs-buttons a { margin-left: 5px; height: 10px; width: 10px; float: left; border: 1px solid #9F0909; color: #B8C4CF; text-indent: -1000px; background:#5C0503;}
+.cs-active { background-color: #000!important; color: #FFFFFF; border-top:1px solid #cc0c0c; border-left:1px solid #cc0c0c; }
+
+.cs-title { width: 850px; padding: 10px; background-color: #000000; color: #FFFFFF; }
+
+.cs-prev, 
+.cs-next { background-color: #000000; color: #FFFFFF; padding: 0px 10px; }
+
+#Alza03 table td {vertical-align:top;}/* jQuery Countdown styles 1.5.8. */
+.hasCountdown {
+	text-shadow: transparent 0px 1px 1px;
+	overflow: hidden;
+	padding: 5px;
+	/*cursor:pointer;*/
+}
+
+.countdown_rtl {
+	direction: rtl;
+}
+.countdown_holding span {
+	background-color: #ccc;
+}
+.countdown_row {
+	clear: both;
+	width: 100%;
+	padding: 3px 2px;
+	text-align: center;
+}
+.countdown_show1 .countdown_section {
+	width: 98%;
+}
+.countdown_show2 .countdown_section {
+	width: 48%;
+}
+.countdown_show3 .countdown_section {
+	width: 32.5%;
+}
+.countdown_show4 .countdown_section {
+	width: 24.5%;
+}
+.countdown_show5 .countdown_section {
+	width: 19.5%;
+}
+.countdown_show6 .countdown_section {
+	width: 16.25%;
+}
+.countdown_show7 .countdown_section {
+	width: 14%;
+}
+.countdown_section {
+	display: block;
+	float: left;
+	font-size: 75%;
+	text-align: center;
+	margin:3px 0;
+}
+.countdown_amount {
+	font-size: 200%;
+}
+.countdown_descr {
+	display: block;
+	width: 100%;
+}
+
+#countdown-preview{
+	padding:3px;
+	border:1px solid #999;
+	background:#fff;
+	margin-bottom:10px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+#wpadminbar *{height:auto;width:auto;margin:0;padding:0;position:static;text-transform:none;letter-spacing:normal;line-height:1;font:normal 13px/28px sans-serif;color:#ccc;text-shadow:#444 0 -1px 0;}#wpadminbar ul li:before,#wpadminbar ul li:after{content:normal;}#wpadminbar a,#wpadminbar a:hover,#wpadminbar a img,#wpadminbar a img:hover{outline:none;border:none;text-decoration:none;background:none;}#wpadminbar{direction:ltr;color:#ccc;font:normal 13px/28px sans-serif;height:28px;position:fixed;top:0;left:0;width:100%;min-width:600px;z-index:99999;background-color:#464646;background-image:-ms-linear-gradient(bottom,#373737,#464646 5px);background-image:-moz-linear-gradient(bottom,#373737,#464646 5px);background-image:-o-linear-gradient(bottom,#373737,#464646 5px);background-image:-webkit-gradient(linear,left bottom,left top,from(#373737),to(#464646));background-image:-webkit-linear-gradient(bottom,#373737,#464646 5px);background-image:linear-gradient(bottom,#373737,#464646 5px);}#wpadminbar .ab-sub-wrapper,#wpadminbar ul,#wpadminbar ul li{background:none;clear:none;list-style:none;margin:0;padding:0;position:relative;z-index:99999;}#wpadminbar .quicklinks{border-left:1px solid transparent;}#wpadminbar .quicklinks ul{text-align:left;}#wpadminbar li{float:left;}#wpadminbar .ab-empty-item{outline:none;}#wpadminbar .quicklinks>ul>li{border-right:1px solid #555;}#wpadminbar .quicklinks>ul>li>a,#wpadminbar .quicklinks>ul>li>.ab-empty-item{border-right:1px solid #333;}#wpadminbar .quicklinks .ab-top-secondary>li{border-left:1px solid #333;border-right:0;float:right;}#wpadminbar .quicklinks .ab-top-secondary>li>a,#wpadminbar .quicklinks .ab-top-secondary>li>.ab-empty-item{border-left:1px solid #555;border-right:0;}#wpadminbar .quicklinks a,#wpadminbar .quicklinks .ab-empty-item,#wpadminbar .shortlink-input{height:28px;display:block;padding:0 12px;margin:0;}#wpadminbar .menupop .ab-sub-wrapper,#wpadminbar .shortlink-input{margin:0 0 0 -1px;padding:0;-moz-box-shadow:0 4px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 4px 4px rgba(0,0,0,0.2);box-shadow:0 4px 4px rgba(0,0,0,0.2);background:#fff;display:none;position:absolute;float:none;border-width:0 1px 1px 1px;border-style:solid;border-color:#dfdfdf;}#wpadminbar.ie7 .menupop .ab-sub-wrapper,#wpadminbar.ie7 .shortlink-input{top:28px;left:0;}#wpadminbar .ab-top-secondary .menupop .ab-sub-wrapper{right:0;left:auto;margin:0 -1px 0 0;}#wpadminbar .ab-sub-wrapper>.ab-submenu:first-child{border-top:none;}#wpadminbar .ab-submenu{padding:6px 0;border-top:1px solid #dfdfdf;}#wpadminbar .selected .shortlink-input{display:block;}#wpadminbar .quicklinks .menupop ul li{float:none;}#wpadminbar .quicklinks .menupop ul li a strong{font-weight:bold;}#wpadminbar .quicklinks .menupop ul li .ab-item,#wpadminbar .quicklinks .menupop ul li a strong,#wpadminbar .quicklinks .menupop.hover ul li .ab-item,#wpadminbar.nojs .quicklinks .menupop:hover ul li .ab-item,#wpadminbar .shortlink-input{line-height:26px;height:26px;text-shadow:none;white-space:nowrap;min-width:140px;}#wpadminbar .shortlink-input{width:200px;}#wpadminbar.nojs li:hover>.ab-sub-wrapper,#wpadminbar li.hover>.ab-sub-wrapper{display:block;}#wpadminbar .menupop li:hover>.ab-sub-wrapper,#wpadminbar .menupop li.hover>.ab-sub-wrapper{margin-left:100%;margin-top:-33px;border-width:1px;}#wpadminbar .ab-top-secondary .menupop li:hover>.ab-sub-wrapper,#wpadminbar .ab-top-secondary .menupop li.hover>.ab-sub-wrapper{margin-left:0;left:inherit;right:100%;}#wpadminbar .ab-top-menu>li:hover>.ab-item,#wpadminbar .ab-top-menu>li.hover>.ab-item,#wpadminbar .ab-top-menu>li>.ab-item:focus,#wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus{color:#fafafa;background-color:#3a3a3a;background-image:-ms-linear-gradient(bottom,#3a3a3a,#222);background-image:-moz-linear-gradient(bottom,#3a3a3a,#222);background-image:-o-linear-gradient(bottom,#3a3a3a,#222);background-image:-webkit-gradient(linear,left bottom,left top,from(#3a3a3a),to(#222));background-image:-webkit-linear-gradient(bottom,#3a3a3a,#222);background-image:linear-gradient(bottom,#3a3a3a,#222);}#wpadminbar.nojs .ab-top-menu>li.menupop:hover>.ab-item,#wpadminbar .ab-top-menu>li.menupop.hover>.ab-item{background:#fff;color:#333;text-shadow:none;}#wpadminbar .hover .ab-label,#wpadminbar.nojq .ab-item:focus .ab-label{color:#fafafa;}#wpadminbar .menupop.hover .ab-label{color:#333;text-shadow:none;}#wpadminbar .menupop li:hover,#wpadminbar .menupop li.hover,#wpadminbar .quicklinks .menupop .ab-item:focus,#wpadminbar .quicklinks .ab-top-menu .menupop .ab-item:focus{background-color:#eaf2fa;}#wpadminbar .ab-submenu .ab-item{color:#333;text-shadow:none;}#wpadminbar .quicklinks .menupop ul li a,#wpadminbar .quicklinks .menupop ul li a strong,#wpadminbar .quicklinks .menupop.hover ul li a,#wpadminbar.nojs .quicklinks .menupop:hover ul li a{color:#21759B;}#wpadminbar .menupop .menupop>.ab-item{display:block;background-image:url('http://cdn.oldplayer.cz/wp-includes/css/../images/admin-bar-sprite.png?d=20111130');background-position:95% -20px;background-repeat:no-repeat;padding-right:2em;}#wpadminbar .ab-top-secondary .menupop .menupop>.ab-item{background-image:url('http://cdn.oldplayer.cz/wp-includes/css/../images/admin-bar-sprite.png?d=20111130');background-position:5% -46px;background-repeat:no-repeat;padding-left:2em;padding-right:1em;}#wpadminbar .quicklinks .menupop ul.ab-sub-secondary{display:block;position:relative;right:auto;margin:0;background:#eee;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}#wpadminbar .quicklinks .menupop .ab-sub-secondary>li:hover,#wpadminbar .quicklinks .menupop .ab-sub-secondary>li.hover,#wpadminbar .quicklinks .menupop .ab-sub-secondary>li .ab-item:focus{background-color:#dfdfdf;}#wpadminbar .quicklinks a span#ab-updates{background:#eee;color:#333;text-shadow:none;display:inline;padding:2px 5px;font-size:10px;font-weight:bold;-webkit-border-radius:10px;border-radius:10px;}#wpadminbar .quicklinks a:hover span#ab-updates{background:#fff;color:#000;}#wpadminbar .ab-top-secondary{float:right;background-color:#464646;background-image:-ms-linear-gradient(bottom,#373737,#464646 5px);background-image:-moz-linear-gradient(bottom,#373737,#464646 5px);background-image:-o-linear-gradient(bottom,#373737,#464646 5px);background-image:-webkit-gradient(linear,left bottom,left top,from(#373737),to(#464646));background-image:-webkit-linear-gradient(bottom,#373737,#464646 5px);background-image:linear-gradient(bottom,#373737,#464646 5px);}#wpadminbar ul li:last-child,#wpadminbar ul li:last-child .ab-item{border-right:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}#wp-admin-bar-my-account>ul{min-width:198px;}#wp-admin-bar-my-account.with-avatar>ul{min-width:270px;}#wpadminbar #wp-admin-bar-user-actions>li{margin-left:16px;margin-right:16px;}#wpadminbar #wp-admin-bar-my-account.with-avatar #wp-admin-bar-user-actions>li{margin-left:88px;}#wp-admin-bar-user-actions>li>.ab-item{padding-left:8px;}#wpadminbar #wp-admin-bar-user-info{margin-top:6px;margin-bottom:15px;height:auto;background:none;}#wp-admin-bar-user-info .avatar{position:absolute;left:-72px;top:4px;}#wpadminbar #wp-admin-bar-user-info a{background:none;height:auto;}#wpadminbar #wp-admin-bar-user-info span{background:none;padding:0;height:18px;}#wpadminbar #wp-admin-bar-user-info .display-name,#wpadminbar #wp-admin-bar-user-info .username{text-shadow:none;display:block;}#wpadminbar #wp-admin-bar-user-info .display-name{color:#333;}#wpadminbar #wp-admin-bar-user-info .username{color:#999;font-size:11px;}#wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar>a img{width:16px;height:16px;border:1px solid #999;padding:0;background:#eee;line-height:24px;vertical-align:middle;margin:-3px 0 0 6px;float:none;display:inline;}#wpadminbar .quicklinks li img.blavatar{vertical-align:middle;margin:-3px 4px 0 0;padding:0;}#wpadminbar #wp-admin-bar-search .ab-item{padding:0;}#wpadminbar #wp-admin-bar-search .ab-item{background:transparent;}#wpadminbar #adminbarsearch{height:28px;padding:0 2px;}#wpadminbar #adminbarsearch .adminbar-input{font:13px/24px sans-serif;height:24px;width:24px;border:none;padding:0 3px 0 23px;margin:0;color:#ccc;text-shadow:#444 0 -1px 0;background-color:rgba(255,255,255,0);background-image:url('http://cdn.oldplayer.cz/wp-includes/css/../images/admin-bar-sprite.png?d=20111130');background-position:3px 2px;background-repeat:no-repeat;outline:none;-webkit-border-radius:3px;border-radius:3px;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;-webkit-transition-duration:400ms;-webkit-transition-property:width,background;-webkit-transition-timing-function:ease;-moz-transition-duration:400ms;-moz-transition-property:width,background;-moz-transition-timing-function:ease;-o-transition-duration:400ms;-o-transition-property:width,background;-o-transition-timing-function:ease;}#wpadminbar.ie7 #adminbarsearch .adminbar-input{margin-top:1px;width:120px;}#wpadminbar #adminbarsearch .adminbar-input:focus{color:#555;text-shadow:0 1px 0 #fff;width:200px;background-color:rgba(255,255,255,0.9);}#wpadminbar.ie8 #adminbarsearch .adminbar-input{background-color:#464646;}#wpadminbar.ie8 #adminbarsearch .adminbar-input:focus{background-color:#fff;}#wpadminbar #adminbarsearch .adminbar-input::-webkit-input-placeholder{color:#ddd;}#wpadminbar #adminbarsearch .adminbar-input:-moz-placeholder{color:#ddd;}#wpadminbar #adminbarsearch .adminbar-button{display:none;}#wpadminbar #wp-admin-bar-appearance{border-top:none;margin-top:-12px;}#wpadminbar #wp-admin-bar-appearance{border-top:none;margin-top:-12px;}#wpadminbar .ab-icon{position:relative;float:left;width:16px;height:16px;margin-top:6px;}#wpadminbar .ab-label{margin-left:4px;}#wp-admin-bar-wp-logo>.ab-item .ab-icon{width:20px;height:20px;margin-top:4px;background-image:url('http://cdn.oldplayer.cz/wp-includes/css/../images/admin-bar-sprite.png?d=20111130');background-position:0 -76px;background-repeat:no-repeat;}#wpadminbar.nojs #wp-admin-bar-wp-logo:hover>.ab-item .ab-icon,#wpadminbar #wp-admin-bar-wp-logo.hover>.ab-item .ab-icon{background-position:0 -104px;}#wp-admin-bar-updates>.ab-item .ab-icon{background-image:url('http://cdn.oldplayer.cz/wp-includes/css/../images/admin-bar-sprite.png?d=20111130');background-position:-2px -159px;background-repeat:no-repeat;}#wp-admin-bar-comments>.ab-item .ab-icon{background-image:url('http://cdn.oldplayer.cz/wp-includes/css/../images/admin-bar-sprite.png?d=20111130');background-position:-1px -134px;background-repeat:no-repeat;}#wpadminbar span.count-0{display:none;}#wpadminbar #wp-admin-bar-new-content>.ab-item .ab-icon{background-image:url('http://cdn.oldplayer.cz/wp-includes/css/../images/admin-bar-sprite.png?d=20111130');background-position:-2px -182px;background-repeat:no-repeat;}#wpadminbar.nojs #wp-admin-bar-new-content:hover>.ab-item .ab-icon,#wpadminbar #wp-admin-bar-new-content.hover>.ab-item .ab-icon{background-position:-2px -203px;}* html #wpadminbar{overflow:hidden;position:absolute;}* html #wpadminbar .quicklinks ul li a{float:left;}* html #wpadminbar .menupop a span{background-image:none;}.adblock_message_image {
+  border:1px solid #ccc;
+  float:right;
+  margin:0 0 0 20px;
+  padding:5px;
+}
+
+.aab_powered_by {
+  text-align:right;
+  font-size:9px;
+  line-height:14px;
+}
+/*
+Default style for WP-PageNavi plugin
+
+http://wordpress.org/extend/plugins/wp-pagenavi/
+*/
+
+.wp-pagenavi {
+	clear: both;
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+	text-decoration: none;
+	border: 1px solid #BFBFBF;
+	padding: 3px 5px;
+	margin: 2px;
+}
+
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+	border-color: #000;
+}
+
+.wp-pagenavi span.current {
+	font-weight: bold;
+}
+.review {
+margin:0 5px 10px;
+}
+.review * {
+color:#333333;
+font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+font-size:11px;
+}
+.review h2 {
+background: url('http://cdn.oldplayer.cz/wp-content/plugins/review-box/../../themes/Oblivious2/Oblivious/images/catmenu.png') repeat scroll 0 0 transparent;
+color:white;
+font-size:11px;
+margin:0;
+padding:5px;
+text-shadow: rgba(0, 0, 0, 0.25) 0px -1px 1px;
+}
+.review .mainbox {
+background:#311c05 none repeat scroll 0 0;
+border-color:#de0505;
+border-style:solid;
+border-width:0 1px 1px;
+padding:5px;
+}
+.review .mainbox .procons {
+margin-bottom:10px;
+background-color:#190e02;
+}
+.review .mainbox * table {
+border-spacing:0;
+text-align:left;
+width:100%;
+}
+.review .mainbox .procons table tr th {
+border-bottom:1px solid #E2E6EF;
+border-color:#C7CFE0 #C7CFE0 #E2E6EF;
+color:#c1ad97;
+font-size:13px;
+margin:0;
+padding:3px;
+font-weight:bold;
+}
+.review .mainbox .procons table tr td {
+border-bottom:1px solid #E2E6EF;
+color:#c1ad97;
+font-size:13px;
+margin:0;
+padding:5px;
+}
+.review .mainbox .procons table tr:hover td {
+background:#EEEEEE none repeat scroll 0 0;
+color:black;
+}
+.review .mainbox .review_grid tr td {
+border-bottom:0 none;
+color:#555555;
+margin:0;
+padding:5px;
+}
+.review .mainbox .review_grid tr .review_label {
+font-size:12px;
+font-weight:bold;
+width:40px;
+}
+.review .mainbox .review_grid tr td .rating_bg {
+background:#190e02 none repeat scroll 0 0;
+position:relative;
+border: 1px solid #de0505;
+}
+.review .mainbox .review_grid tr td .rating_bg .rating_bar {
+background: url('http://cdn.oldplayer.cz/wp-content/plugins/review-box/../../themes/Oblivious2/Oblivious/images/catmenu.png') repeat scroll 0 0 transparent;
+color:white !important;
+display:block;
+font-size:13px;
+font-weight:bold;
+padding:3px 0;
+text-align:left;
+}
+.review .mainbox .review_grid tr td .rating_bg .rating_bar .rating_bar_content {
+padding-left:2px;
+color: white !important;
+text-shadow: rgba(0, 0, 0, 0.75) 0px -1px 1px;
+}
