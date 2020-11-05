@@ -1,18 +1,51 @@
 ---
 layout: default
+title: Old Player
 ---
 
-{% for post in site.posts limit:10 %}
-<div class="post">
-	<h2><a href=".{{post.url}}" rel="bookmark" title="{{post.title}}">{{post.title}}</a></h2>
+{% if page.url == "/" %}
 
-	<div class="entry">
-		{{post.description}}
-		{{post.content}}
-	</div>
-	<p class="postmetadata">
-		<a href="{{post.id}}/" title="Read more {{page.title}}">
-			Read more</a>
-	</p>
+<!-- Featured
+================================================== -->
+<!--
+<section class="featured-posts">
+    <div class="section-title">
+        <h2><span>Featured</span></h2>
+    </div>
+    <div class="row">
+
+    {% for post in site.posts %}
+
+        {% if post.featured == true %}
+
+            {% include featuredbox.html %}
+
+        {% endif %}
+
+    {% endfor %}
+
+    </div>
+</section>
+-->
+{% endif %}
+
+<!-- Posts Index
+================================================== -->
+<section class="recent-posts">
+  <div class="section-title">
+    <h2><span>Články</span></h2>
+  </div>
+
+  <div class="row listrecent">
+    {% for post in paginator.posts %} {% include postbox.html %} {% endfor %}
+  </div>
+</section>
+
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+  <div class="pointerup"><i class="fa fa-caret-up"></i></div>
+  <span class="navigation" role="navigation">
+    {% include pagination.html %}
+  </span>
 </div>
-{% endfor %}
